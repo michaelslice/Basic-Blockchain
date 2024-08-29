@@ -1,0 +1,42 @@
+Goal: Create a digital ledger that can record transactions across nodes. It must be public and immutable.
+
+Basic Info:
+
+What is Bitcoin? It is a decentralized cryptocurrency, that operates using nodes in a peer-to-peer(P2P) network that
+                 uses the Bitcoin protocol to validate transactions 
+
+Definitions: 
+	Nodes: A redistribution point, or a communication endpoint
+	Peer-to-peer(P2P): A distributed application architecture that partitions tasks or workloads between peers
+	Bitcoin-network: Set of rules that govern the bitcoin network
+
+Supply:
+	Bitcoin has a fixed supply of 21 million coins, making it deflationary
+
+Halving: 
+	Every four years the reward for mining a new block is halved. The purpose is to reduce the rate at which 
+	new bitcoins are created thereby increasing scarcity. 
+
+Bitcoin Wallets:
+	A Bitcoin wallet is just software that stores your private and public keys and allows you to interact 
+	with the Bitcoin network to send, receive, and store bitcoin
+	Public Key: Cryptographic code, that is derived from the private key
+	Private Key: Secret code that allows you to access your funds, must be kept private
+
+Blocks: 
+	Transactions are grouped into blocks. Each block contains a list of transactions, a reference to the 
+ 	What the Block Contains:
+		
+	
+	Previous Block Hash: Hash of the last header block
+	Timestamp: The time when the block was created
+	Nonce: A value used in Proof of Work systems to verify transactions
+	
+
+Blockchain
+	It is a decentralized ledger that records all Bitcoin transactions across a network of computers 
+	previous block, and a proof of work
+	Proof-Of-Work: Requires Bitcoin miners to perform a computational task to prove that they have done a certain
+	amount of work.  
+	Computational Task: The task involves finding a hash value that meets certain criteria. The hash is the result
+	of applying the SHA-256 hashing algo to the block's data

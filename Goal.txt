@@ -36,6 +36,11 @@ Bitcoin Wallets:
 			2. The result of the previous is then hashed using RIPEMD-160, which will be 
 			   the public key address 
 
+Transactions: Once you have a valid wallet, the following is needed to make a transaction
+	Amount: Amount of bitcoin sent
+	From: The address of the sender
+	To: The address of the reciever
+		
 Mempool:
 	When two people initiate a transaction, the transactions are first placed in the mempool, 
 	where they wait until a miner successfully completes the proof of work. Once the proof of 

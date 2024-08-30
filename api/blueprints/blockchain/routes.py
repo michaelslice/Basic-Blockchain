@@ -6,7 +6,11 @@ import random
 
 @blockchain_bp.route('/blockchain', methods=['GET', 'POST'])
 def blockchain():
-    if request.method == 'GET':
-        return 'test'
-    else:
-        return 'blockchain'
+
+    # First block
+    genesis = []
+    
+    # Block header
+    
+
+    return 'blockchain'

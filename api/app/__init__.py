@@ -7,6 +7,7 @@ import random
 from blueprints.blockchain import blockchain_bp
 from blueprints.transaction import transaction_bp
 from blueprints.wallet import wallet_bp
+from blueprints.mempool import mempool_bp
 
 # Create an instance of the Flask class
 def create_app():
@@ -16,5 +17,6 @@ def create_app():
     app.register_blueprint(blockchain_bp)
     app.register_blueprint(transaction_bp)
     app.register_blueprint(wallet_bp)
+    app.register_blueprint(mempool_bp)
 
     return app

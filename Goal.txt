@@ -20,18 +20,35 @@ Halving:
 Bitcoin Wallets:
 	A Bitcoin wallet is just software that stores your private and public keys and allows you to interact 
 	with the Bitcoin network to send, receive, and store bitcoin
+	
 	Public Key: Cryptographic code, that is derived from the private key
 	Private Key: Secret code that allows you to access your funds, must be kept private
+
+	Public & Private Keys are Based on Elleptic Curve Cryptography:
+		Elliptic Curve: Is defined by y^2 = x^3 + ax + b
+		Bitcoin Uses secp256k1, and is defined by y^2 = x^3 + 7, where a = 0 and b = 7
+
+		Private Key = 64-character hexadecimal string
+		Public Key = Private Key * G, where G is predefined point on the Elleptic Curve 
+
+		Hashing: The public key is then hashed to create a Bitcoin address, this involves
+			1. SHA-256: Public key is hashed using SHA-256
+			2. The result of the previous is then hashed using RIPEMD-160, which will be 
+			   the public key address 
+
+Mempool:
+	When two people initiate a transaction, the transactions are first placed in the mempool, 
+	where they wait until a miner successfully completes the proof of work. Once the proof of 
+	work is completed, the transactions are added to a block, and the miner is rewarded with 
+	Bitcoin for their efforts.
 
 Blocks: 
 	Transactions are grouped into blocks. Each block contains a list of transactions, a reference to the 
  	What the Block Contains:
-		
 	
 	Previous Block Hash: Hash of the last header block
 	Timestamp: The time when the block was created
 	Nonce: A value used in Proof of Work systems to verify transactions
-	
 
 Blockchain
 	It is a decentralized ledger that records all Bitcoin transactions across a network of computers 

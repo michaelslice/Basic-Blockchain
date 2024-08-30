@@ -11,3 +11,5 @@ pip install -r requirements.txt
 ```
 python app.py
 ```
+# Resources
+- [Learn Me a Bitcoin](https://learnmeabitcoin.com/beginners/how-does-bitcoin-work/)

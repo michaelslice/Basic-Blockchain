@@ -9,7 +9,7 @@ pip install -r requirements.txt
 ```
 3. Start the server
 ```
-python app.py
+python run.py
 ```
 # Resources
 - [Learn Me a Bitcoin](https://learnmeabitcoin.com/beginners/how-does-bitcoin-work/)

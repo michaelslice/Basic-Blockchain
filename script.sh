@@ -27,8 +27,11 @@ curl -X POST $transaction_url \
             \"User1-Private-Key\": \"$user1_private_key\", 
             \"User2-Public-Key\": \"$user2_public_key\", 
             \"User2-Private-Key\": \"$user2_private_key\",
-
-            \"User1-Bitcoin\": \"3\",
-            \"User2-Bitcoin\": \"2\"
+            \"User1-Bitcoin\": \"43\",
+            \"User2-Bitcoin\": \"62\",
+            \"User1-Bitcoin-Bought\": \"16\",
+            \"User2-Bitcoin-Sent\": \"16\"
         }"
     
+# If transaction is successful add transaction to the mempool
+mempool_url="http://127.0.0.1:5000/mempool"
